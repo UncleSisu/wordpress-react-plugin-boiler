@@ -1,0 +1,50 @@
+// vars
+@import 'vars';
+
+// common
+@import 'common/construct';
+@import 'common/properties';
+@import 'common/header';
+@import 'common/configure';
+@import 'common/option';
+
+.example-btn {
+  background: $grey;
+  padding: 1vw 4vw;
+  font-size: .9vw;
+  margin: 1vw;
+  color: $white;
+  text-decoration: none;
+  // flex-grow: 1;
+  text-align: center;
+  &:hover {
+    background-color: $burnt;
+  }
+
+  @media (max-width: $mid-break) {
+    padding: 2vw 6vw;
+    font-size: 1.8vw;
+  }
+
+  @media (max-width: $mobile-break) {
+    font-size: 3vw;
+  }
+}
+
+.container {
+  margin: 3% 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-title {
+  font-size: 1.2vw;
+  font-weight: bold;
+  @media (max-width: $mid-break) {
+    font-size: 3vw;
+  }
+}
+
+.example-active-link {
+  background-color: $wp-blue;
+}

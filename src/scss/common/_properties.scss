@@ -1,0 +1,36 @@
+// property styles
+.example-property-group,
+.example-property-item-container,
+.example-properties,
+.example-property-item,
+.example-property-inputs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.example-property-item {
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+}
+
+.example-property-remove {
+  background: $grey;
+  padding: 1vw 3vw;
+  font-size: .9vw;
+  margin-left: 2vw;
+  color: $white;
+  text-decoration: none;
+  text-align: center;
+  &:hover {
+    background-color: $burnt;
+  }
+}
+.example-property-ctas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}

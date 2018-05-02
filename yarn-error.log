@@ -1,0 +1,87 @@
+Arguments: 
+  /home/blakesisu/.nvm/versions/node/v10.0.0/bin/node /home/blakesisu/.yarn/bin/yarn.js
+
+PATH: 
+  /home/blakesisu/.yarn/bin:/home/blakesisu/.config/yarn/global/node_modules/.bin:/home/blakesisu/.nvm/versions/node/v10.0.0/bin:/home/blakesisu/go/bin:/home/blakesisu/.cargo/bin:/home/blakesisu/.local/bin:/usr/local/bin:/usr/local/sbin:/home/blakesisu/.yarn/bin:/home/blakesisu/.config/yarn/global/node_modules/.bin:/home/blakesisu/go/bin:/home/blakesisu/.cargo/bin:/home/blakesisu/.local/bin:/opt/google-cloud-sdk/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/blakesisu/.fzf/bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  10.0.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/blakesisu/Documents/Sisu/Projects/wp-plugin-dev-tool/wp-plugin/node_modules/abbrev'
+
+npm manifest: 
+  {
+    "name": "example-react-wordpress-plugin",
+    "version": "0.0.1",
+    "description": "",
+    "repository": {
+      "type": "git"
+    },
+    "main": "src/admin.js",
+    "watch": {
+      "migrate": {
+        "patterns": ["build/"],
+        "extensions": "js,scss,css"
+      }
+    },
+    "scripts": {
+      "dev": "cross-env NODE_ENV=dev webpack --watch --progress --mode development --config webpack.config.js",
+      "build": "webpack -p --progress --mode production --config webpack.config.js",
+      "check-outdated": "node check-outdated-deps.js",
+      "migrate": "cp -a build/ publish/ && cp -a classes/ publish/ && cp -a wp-example-plugin.php publish/ && cp -a setup-hooks.php example-plugin/",
+      "lint": "eslint client"
+    },
+    "dependencies": {
+      "babel-preset-env": "^1.6.1",
+      "jquery": "^3.3.1",
+      "prop-types": "^15.6.1",
+      "react": "^16.2.0",
+      "react-dom": "^16.2.0",
+      "react-redux": "^5.0.7",
+      "react-router": "^4.2.0",
+      "react-router-dom": "^4.2.2",
+      "react-router-redux": "^4.0.8",
+      "redux": "^3.7.2",
+      "redux-logger": "^3.0.6",
+      "redux-saga": "^0.16.0"
+    },
+    "devDependencies": {
+      "babel-core": "^6.26.0",
+      "babel-eslint": "^8.2.2",
+      "babel-loader": "^7.1.4",
+      "babel-preset-env": "^1.6.1",
+      "babel-preset-react": "^6.23.0",
+      "babel-preset-stage-2": "^6.22.0",
+      "cross-env": "^5.1.4",
+      "css-loader": "^0.28.11",
+      "eslint": "^4.19.0",
+      "eslint-config-google": "^0.9.1",
+      "extract-text-webpack-plugin": "^4.0.0-beta.0",
+      "file-loader": "^1.1.11",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.0.7",
+      "install": "^0.10.4",
+      "node-sass": "^4.7.2",
+      "npm": "^5.7.1",
+      "prettier": "^1.7.4",
+      "react-hot-loader": "^3.1.3",
+      "sass-loader": "^6.0.7",
+      "style-loader": "^0.20.3",
+      "webpack": "^4.1.1",
+      "webpack-cli": "^2.0.12",
+      "webpack-dev-server": "^3.1.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

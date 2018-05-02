@@ -1,0 +1,19 @@
+// Wordpress URL
+export const URL = wp_example_ajax.ajax_url;
+
+// OPTIONs
+export const GET_OPTIONS = 'GET_OPTIONS'
+export const POST_OPTION = 'POST_OPTION'
+export const DELETE_OPTION = 'DELETE_OPTION'
+export const TEST_OPTION = 'TEST_OPTION'
+export const POST_OPTION_SUCCESS = 'POST_OPTION_SUCCESS'
+export const POST_OPTION_ERROR = 'POST_OPTION_ERROR'
+export const GET_OPTIONS_SUCCESS = 'GET_OPTIONS_SUCCESS'
+export const GET_OPTIONS_ERROR = 'GET_OPTIONS_ERROR'
+export const DELETE_OPTION_SUCCESS = 'DELETE_OPTION_SUCCESS'
+export const DELETE_OPTION_ERROR = 'DELETE_OPTION_ERROR'
+export const TEST_OPTION_SUCCESS = 'TEST_OPTION_SUCCESS'
+export const TEST_OPTION_ERROR = 'TEST_OPTION_ERROR'
+
+// visibility
+export const ROUTE_VISIBILITY = 'ROUTE_VISIBILITY'
